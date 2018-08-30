@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/smintz93/recipe_project/issues"
   },
-  "homepage": "https://github.com/smintz93/recipe_project#readme"
+  "homepage": "https://github.com/smintz93/recipe_project#readme",
+  "devDependencies": {
+    "webpack": "^4.17.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
