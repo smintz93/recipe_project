@@ -1,5 +1,5 @@
-// Global app controller
-import num from './test.js'
-const x = 23;
+import str from './models/Search'
 
-console.log(`I imported ${num} from another Test.js. Variable ${x} is x`);
+import { add , multiply, ID } from './views/searchView'
+
+console.log(`Using imported fucnctions ${add(ID, 2)} and ${multiply(3, 5)}. ${str}`);
