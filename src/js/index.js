@@ -1,5 +1,10 @@
-import str from './models/Search'
+//  http://food2fork.com/api/search
 
-import { add , multiply, ID } from './views/searchView'
+// 592d87178e875f403f816544a1cf57cb
 
-console.log(`Using imported fucnctions ${add(ID, 2)} and ${multiply(3, 5)}. ${str}`);
+async function getResults(query) {
+
+	
+}
+
+getResults();
