@@ -10,6 +10,7 @@ export const clearResults = () => {
 	elements.searchResList.innerHTML = '';
 };
 
+// function that displays only one line of the title and doesn't cut off mid word 
 const limitRecipeTitle = (title, limit=17) => {
 	const newTitle = [];
 	if(title.length > limit) {
@@ -19,6 +20,8 @@ const limitRecipeTitle = (title, limit=17) => {
 			}
 			return acc + cur.length
 		}, 0)
+		//return results
+		return `${newTitle.join(' ')} ...`;
 	} 
 	return title; 
 }
@@ -31,7 +34,7 @@ const renderRecipe = recipe => {
 	                <img src="${recipe.image_url}" alt="${recipe.title}">
 	            </figure>
 	            <div class="results__data">
-	                <h4 class="results__name">${recipe.title}</h4>
+	                <h4 class="results__name">${limitRecipeTitle(recipe.title)}</h4>
 	                <p class="results__author">${recipe.publisher}</p>
 	            </div>
 	        </a>
