@@ -8,6 +8,7 @@ export const clearInput = () => {
 
 export const clearResults = () => {
 	elements.searchResList.innerHTML = '';
+	elements.searchResPages.innerHTML = '';
 };
 
 // function that displays only one line of the title and doesn't cut off mid word 
