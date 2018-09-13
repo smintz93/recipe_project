@@ -1,6 +1,7 @@
-import Search from './models/Search'
-import * as searchView from './views/searchView'
-import { elements, renderLoader, clearLoader } from './views/base'
+import Search from './models/Search';
+import Recipe from './models/Recipe';
+import * as searchView from './views/searchView';
+import { elements, renderLoader, clearLoader } from './views/base';
 
 // GLOBAL STATE OF APP 
 // - Search object
